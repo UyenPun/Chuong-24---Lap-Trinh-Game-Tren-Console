@@ -1,0 +1,1126 @@
+1 game caro hoàn chỉnh là sẽ bao gồm:
++ giao diện (đồ họa)
++ xử lý
+
+Phải đi phân tích 1 game hoàn chỉnh để biết chúng ta cần phải làm những gì?
+=> Đi lên mạng xem qua các sản phẩm game thực tế và phân tích chúng
+
+--------------------------------------
+https://www.youtube.com/watch?v=nvz07-DCm8w
+
+Giao diện
+1/ Menu game với các tính năng Play, Help, About, Exit
+2/ Bàn cờ dạng lưới ô vuông (giống như ô tập) để đánh quân cờ lên đó
+3/ Cho biết lượt đánh hiện tại là quân nào?
+4/ Thống kê số lượng quân đã đánh ra
+5/ Chạy thông tin giới thiệu tác giả
+
+Xử lý
+1/ Điều hướng 4 phím mũi tên (Left, Right, Top, Down) hoặc 4 phím (A, W, D, S) để di chuyển con trỏ đến vị trí tọa độ cần đánh trên bàn cờ và nhấn phím Enter hay Space để đánh quân cờ xuống
+2/ Cho biết lượt đánh hiện tại là quân nào?
+3/ Thống kê số lượng quân đã đánh ra
+4/ Xử lý kết luận khi có ai đó thắng hoặc cả 2 đều hòa
+----------------------------------
+https://www.youtube.com/watch?v=AP9Nq5w4KO0
+Tuy game này là đánh với máy, còn chúng ta là đang đánh người với người nhưng vẫn phân tích được những thành phần của game
+
+Giao diện:
+1/ Menu chức năng
+2/ Bàn cờ dạng lưới ô vuông (giống như ô tập) để đánh quân cờ lên đó
+3/ Chạy thông tin giới thiệu tác giả
+
+Xử lý:
+1/ Khi có nước đi chiến thắng thì sẽ nhấp nháy 1 chút vài giây rồi sau đó nổi bật nước đi chiến thắng đó lên
+2/ Kết luận người chơi nào thắng in thông tin cụ thể lên
+3/ Tô màu riêng biệt cho từng quân cờ để dễ nhìn
+----------------------------------
+https://www.youtube.com/watch?v=IY8UYziKqiY
+
+Giao diện bàn cờ lưới ô vuông và đánh quân cờ lên
+
+Những điểm yếu của game này:
+1/ Game này thì không tô màu cho từng quân cờ nên khó theo dõi
+2/ Bàn cờ có vẻ bị giựt lag
+3/ Không làm nổi bật nước đi chiến thắng
+----------------------------------
+https://www.youtube.com/watch?v=0zWTO5L5MHY
+
+Giao diện:
+1/ Chia màn hình ra làm 2 phần, phần bên trái là bàn cờ dạng lưới ô vuông, bên phải là nội dung hiển thị cho các menu chức năng (help, about)
+2/ Bảng thống kê tỷ số
+
+Xử lý:
+1/ Có tô màu phân biệt giữa 2 quân cờ trên bàn cờ
+2/ Xử lý kết luận thắng/thua/hòa
+--------------------------------------
+https://www.youtube.com/watch?v=-QBTYE4fvm4
+
+Giao diện:
+1/ Bàn cờ dạng lưới ô vuông
+2/ Bên lề trái là hướng dẫn sử dụng
+3/ Từ đầu cũng có Menu với các chức năng: New Game, Load Game, Option, Help, About, Exit
+
+Xử lý:
+1/ Cho phép lưu lại tình trạng bàn cờ đang đánh dở rồi bất kỳ khi nào muốn thì load lại đánh tiếp
+2/ Cái hay là có Menu option trong đó cho cấu hình các lựa chọn như: đánh người vs người hay người vs máy, người đánh đầu tiên sẽ là ai, có tính thời gian không?
+--------------------------------------
+https://www.youtube.com/watch?v=ZcXuXHFZNiQ
+
+Giao diện:
+1/ Bàn cờ dạng lưới ô vuông và bên phải là bảng thông tin của từng người chơi bao gồm đến lượt đánh của ai, đã đánh bao nhiêu quân, tỷ số, các phím hỗ trợ di chuyển với người chơi đó
+
+Xử lý:
+1/ Xử lý kết luận thắng/thua/hòa và in rõ thông tin người thắng
+2/ Tô màu nước đi chiến thắng nhấp nháy ...
+3/ Cho phép lưu lại tình trạng bàn cờ đang đánh dở rồi bất kỳ khi nào muốn thì load lại đánh tiếp
+--------------------------------------
+https://www.youtube.com/watch?v=h6RtgtjsL9M
+
+Giao diện:
+1/ Bàn cờ dạng lưới ô vuông, bên phải là bảng thông tin của từng người chơi bao gồm tỷ số, lượt đánh của ai ...
+2/ Khi có ai đó thắng thì sẽ hỏi có muốn chơi lại từ đầu? có mặt khóc
+
+Xử lý:
+1/ Xử lý kết luận thắng/thua/hòa và in rõ thông tin người thắng
+
+================================> KẾT THÚC QUÁ TRÌNH ĐI THÁM THÍNH <=========================
+Sau khi thám thính 7 game thì chúng ta đúc ra được 1 số kết luận sau đây về giao diện đồ họa và tính năng xử lý cần có của mỗi game
+
+Giao diện đồ họa:
+1/ Bắt buộc phải có đó là vẽ ra được bàn cờ dạng lưới ô vuông để từ đó mới thể hiện được các quân cờ lên đó để đánh
+
+Xử lý:
+1/ Điều hướng bằng các phím (mũi tên hoặc A W D S) trên bàn phím để người chơi di chuyển chọn ô cần đánh và đánh quân cờ vào
+2/ Chắc chắn cơ bản nhất phải là kết luận được tình trạng thắng/thua/hòa của người chơi
+
+Sau khi làm được điều cơ bản trên thì mới xét đến những tính năng bổ sung giúp cho game hoàn hảo hơn
+
+1/ quân X và O sẽ có màu khác nhau để dễ phân biệt => nên có
+2/ Khi có nước đi chiến thắng thì phải nổi bật nước đi đó lên cho thấy được (nhấp nháy) => nên có
+3/ Cho biết lượt đánh hiện tại là của quân nào? Cho biết số lượng quân đã đánh ra => nên có
+4/ Có Menu lựa chọn các tính năng, giới thiệu thông tin tác giả, giới thiệu các phím hỗ trợ chơi ... => nên có
+5/ Cho phép lưu lại tình trạng bàn cờ đang đánh dở rồi bất kỳ khi nào muốn thì load lại đánh tiếp => hay nè
+6/ Cho phép cấu hình các lựa chọn như: chế độ đánh người vs người hay người vs máy, chế độ luật chơi bao nhiêu quân liên tiếp thì thắng, rồi chặn 2 đầu có được thắng không? có tính thời gian không?
+7/ Tính thời gian của mỗi nước đi ví dụ tối đa 1 phút suy nghĩ, nếu hết 1 phút thì người chơi đó thua
+8/ Tính năng Undo cho phép bỏ nước vừa đánh hoặc Redo trở lại tình trạng trước khi Undo => nên có
+9/ Đánh giữa người với máy => cái này khó và hay nè
+
+và còn rất nhiều những tính năng thú vị có thể tùy ý các Bạn sáng tạo phát triển thêm ...
+
+=====================================> BƯỚC 1: VẼ BÀN CỜ <==================================
+
+Đầu tiên chúng ta cứ đi vẽ bàn cờ bằng những ký tự có sẵn trên bàn phím rồi việc làm nó vuông vức đẹp đẽ như các video trên mạng đã xem thì sẽ làm dễ dàng thôi
+
+Ma trận 1 x 1 (1 dòng, 1 cột): 
+cout << "+---+";
+cout << "\n|   |";
+cout << "\n+---+";
+
+Ma trận 1 x 2 (1 dòng, 2 cột): 
+cout << "+---+---+";
+cout << "\n|   |   |";
+cout << "\n+---+---+";
+
+Ma trận 2 x 2 (2 dòng, 2 cột):
+cout << "+---+---+";
+cout << "\n|   |   |";
+cout << "\n+---+---+";
+cout << "\n|   |   |";
+cout << "\n+---+---+";
+
+Ma trận 2 x 3 (2 dòng, 3 cột):
+cout << "+---+---+---+";
+cout << "\n|   |   |   |";
+cout << "\n+---+---+---+";
+cout << "\n|   |   |   |";
+cout << "\n+---+---+---+";
+
+Thử thách 1: Vậy sau khi đã nhìn thấy Anh làm thì nhiệm vụ của các bạn đó là tùy ý người dùng cho sẵn số dòng và số cột, hãy in ra số lượng các ô vuông tương ứng như yêu cầu số dòng, số cột đó
+
+Thử thách 2: Chỉ làm sau khi các Bạn đã làm được thử thách 1: Đó là hãy cho người dùng tùy biến độ rộng giữa 2 cột, độ rộng giữa 2 dòng của các ô vuông
+
+Ví dụ: Độ rộng giữa 2 cột (dấu - ) là 5, độ rộng giữa 2 dòng (dấu | ) là 2 thì sẽ trông như thế này:
+
+cout << "+-----+-----+-----+";
+cout << "\n|     |     |     |";
+cout << "\n|     |     |     |";
+cout << "\n+-----+-----+-----+";
+cout << "\n|     |     |     |";
+cout << "\n|     |     |     |";
+cout << "\n+-----+-----+-----+";
+
+Đã làm xong được thử thách số 1 & số 2
+
+Tiếp theo hãy nâng cấp bàn cờ lên để vuông vức đẹp đẽ ko bị đứt quãng giữa các ký tự với nhau
+
+Muốn làm được nó thì chúng ta không thể chỉ dùng những ký tự có sẵn trên bàn phím mà phải dùng những ký tự trong bảng mã ascii thuộc phần mở rộng
+
+Bảng mã ASCII bình thường chỉ có 128 ký tự
+Bảng mã ASCII mở rộng có thêm vô 1 số ký tự để tổng cộng là có 255 ký tự
+
+Bảng mã:
+i = 32 => ky tu =
+i = 33 => ky tu = !
+i = 34 => ky tu = "
+i = 35 => ky tu = #
+i = 36 => ky tu = $
+i = 37 => ky tu = %
+i = 38 => ky tu = &
+i = 39 => ky tu = '
+i = 40 => ky tu = (
+i = 41 => ky tu = )
+i = 42 => ky tu = *
+i = 43 => ky tu = +
+i = 44 => ky tu = ,
+i = 45 => ky tu = -
+i = 46 => ky tu = .
+i = 47 => ky tu = /
+i = 48 => ky tu = 0
+i = 49 => ky tu = 1
+i = 50 => ky tu = 2
+i = 51 => ky tu = 3
+i = 52 => ky tu = 4
+i = 53 => ky tu = 5
+i = 54 => ky tu = 6
+i = 55 => ky tu = 7
+i = 56 => ky tu = 8
+i = 57 => ky tu = 9
+i = 58 => ky tu = :
+i = 59 => ky tu = ;
+i = 60 => ky tu = <
+i = 61 => ky tu = =
+i = 62 => ky tu = >
+i = 63 => ky tu = ?
+i = 64 => ky tu = @
+i = 65 => ky tu = A
+i = 66 => ky tu = B
+i = 67 => ky tu = C
+i = 68 => ky tu = D
+i = 69 => ky tu = E
+i = 70 => ky tu = F
+i = 71 => ky tu = G
+i = 72 => ky tu = H
+i = 73 => ky tu = I
+i = 74 => ky tu = J
+i = 75 => ky tu = K
+i = 76 => ky tu = L
+i = 77 => ky tu = M
+i = 78 => ky tu = N
+i = 79 => ky tu = O
+i = 80 => ky tu = P
+i = 81 => ky tu = Q
+i = 82 => ky tu = R
+i = 83 => ky tu = S
+i = 84 => ky tu = T
+i = 85 => ky tu = U
+i = 86 => ky tu = V
+i = 87 => ky tu = W
+i = 88 => ky tu = X
+i = 89 => ky tu = Y
+i = 90 => ky tu = Z
+i = 91 => ky tu = [
+i = 92 => ky tu = \
+i = 93 => ky tu = ]
+i = 94 => ky tu = ^
+i = 95 => ky tu = _
+i = 96 => ky tu = `
+i = 97 => ky tu = a
+i = 98 => ky tu = b
+i = 99 => ky tu = c
+i = 100 => ky tu = d
+i = 101 => ky tu = e
+i = 102 => ky tu = f
+i = 103 => ky tu = g
+i = 104 => ky tu = h
+i = 105 => ky tu = i
+i = 106 => ky tu = j
+i = 107 => ky tu = k
+i = 108 => ky tu = l
+i = 109 => ky tu = m
+i = 110 => ky tu = n
+i = 111 => ky tu = o
+i = 112 => ky tu = p
+i = 113 => ky tu = q
+i = 114 => ky tu = r
+i = 115 => ky tu = s
+i = 116 => ky tu = t
+i = 117 => ky tu = u
+i = 118 => ky tu = v
+i = 119 => ky tu = w
+i = 120 => ky tu = x
+i = 121 => ky tu = y
+i = 122 => ky tu = z
+i = 123 => ky tu = {
+i = 124 => ky tu = |
+i = 125 => ky tu = }
+i = 126 => ky tu = ~
+i = 127 => ky tu = 
+i = 128 => ky tu = Ç
+i = 129 => ky tu = ü
+i = 130 => ky tu = é
+i = 131 => ky tu = â
+i = 132 => ky tu = ä
+i = 133 => ky tu = à
+i = 134 => ky tu = å
+i = 135 => ky tu = ç
+i = 136 => ky tu = ê
+i = 137 => ky tu = ë
+i = 138 => ky tu = è
+i = 139 => ky tu = ï
+i = 140 => ky tu = î
+i = 141 => ky tu = ì
+i = 142 => ky tu = Ä
+i = 143 => ky tu = Å
+i = 144 => ky tu = É
+i = 145 => ky tu = æ
+i = 146 => ky tu = Æ
+i = 147 => ky tu = ô
+i = 148 => ky tu = ö
+i = 149 => ky tu = ò
+i = 150 => ky tu = û
+i = 151 => ky tu = ù
+i = 152 => ky tu = ÿ
+i = 153 => ky tu = Ö
+i = 154 => ky tu = Ü
+i = 155 => ky tu = ¢
+i = 156 => ky tu = £
+i = 157 => ky tu = ¥
+i = 158 => ky tu = ₧
+i = 159 => ky tu = ƒ
+i = 160 => ky tu = á
+i = 161 => ky tu = í
+i = 162 => ky tu = ó
+i = 163 => ky tu = ú
+i = 164 => ky tu = ñ
+i = 165 => ky tu = Ñ
+i = 166 => ky tu = ª
+i = 167 => ky tu = º
+i = 168 => ky tu = ¿
+i = 169 => ky tu = ⌐
+i = 170 => ky tu = ¬
+i = 171 => ky tu = ½
+i = 172 => ky tu = ¼
+i = 173 => ky tu = ¡
+i = 174 => ky tu = «
+i = 175 => ky tu = »
+i = 176 => ky tu = ░
+i = 177 => ky tu = ▒
+i = 178 => ky tu = ▓
+i = 179 => ky tu = │
+i = 180 => ky tu = ┤
+i = 181 => ky tu = ╡
+i = 182 => ky tu = ╢
+i = 183 => ky tu = ╖
+i = 184 => ky tu = ╕
+i = 185 => ky tu = ╣
+i = 186 => ky tu = ║
+i = 187 => ky tu = ╗
+i = 188 => ky tu = ╝
+i = 189 => ky tu = ╜
+i = 190 => ky tu = ╛
+i = 191 => ky tu = ┐
+i = 192 => ky tu = └
+i = 193 => ky tu = ┴
+i = 194 => ky tu = ┬
+i = 195 => ky tu = ├
+i = 196 => ky tu = ─
+i = 197 => ky tu = ┼
+i = 198 => ky tu = ╞
+i = 199 => ky tu = ╟
+i = 200 => ky tu = ╚
+i = 201 => ky tu = ╔
+i = 202 => ky tu = ╩
+i = 203 => ky tu = ╦
+i = 204 => ky tu = ╠
+i = 205 => ky tu = ═
+i = 206 => ky tu = ╬
+i = 207 => ky tu = ╧
+i = 208 => ky tu = ╨
+i = 209 => ky tu = ╤
+i = 210 => ky tu = ╥
+i = 211 => ky tu = ╙
+i = 212 => ky tu = ╘
+i = 213 => ky tu = ╒
+i = 214 => ky tu = ╓
+i = 215 => ky tu = ╫
+i = 216 => ky tu = ╪
+i = 217 => ky tu = ┘
+i = 218 => ky tu = ┌
+i = 219 => ky tu = █
+i = 220 => ky tu = ▄
+i = 221 => ky tu = ▌
+i = 222 => ky tu = ▐
+i = 223 => ky tu = ▀
+i = 224 => ky tu = α
+i = 225 => ky tu = ß
+i = 226 => ky tu = Γ
+i = 227 => ky tu = π
+i = 228 => ky tu = Σ
+i = 229 => ky tu = σ
+i = 230 => ky tu = µ
+i = 231 => ky tu = τ
+i = 232 => ky tu = Φ
+i = 233 => ky tu = Θ
+i = 234 => ky tu = Ω
+i = 235 => ky tu = δ
+i = 236 => ky tu = ∞
+i = 237 => ky tu = φ
+i = 238 => ky tu = ε
+i = 239 => ky tu = ∩
+i = 240 => ky tu = ≡
+i = 241 => ky tu = ±
+i = 242 => ky tu = ≥
+i = 243 => ky tu = ≤
+i = 244 => ky tu = ⌠
+i = 245 => ky tu = ⌡
+i = 246 => ky tu = ÷
+i = 247 => ky tu = ≈
+i = 248 => ky tu = °
+i = 249 => ky tu = ∙
+i = 250 => ky tu = ·
+i = 251 => ky tu = √
+i = 252 => ky tu = ⁿ
+i = 253 => ky tu = ²
+i = 254 => ky tu = ■
+i = 255 => ky tu =  
+
+Chú ý 11 ký tự sau đây để nhờ nó mà tạo thành được bàn cờ lưới không bị đứt quãng:
+i = 218 => ky tu = ┌ => góc trên cùng bên trái
+i = 191 => ky tu = ┐=> góc trên cùng bên phải
+i = 217 => ky tu = ┘ => góc dưới cùng bên phải
+i = 192 => ky tu = └ => góc dưới cùng bên trái
+i = 196 => ky tu = ─ => lằn ngang biểu thị độ rộng giữa 2 cột
+i = 179 => ky tu = │ => lằn đứng biểu thị độ rộng giữa 2 dòng
+i = 194 => ky tu = ┬
+i = 193 => ky tu = ┴
+i = 195 => ky tu = ├
+i = 180 => ky tu = ┤
+i = 197 => ky tu = ┼
+
+Đây là đoạn code demo tạo ra 1 ô vuông (ma trận 1 x 1) có độ rộng giữa 2 dòng là 3, độ rộng giữa 2 cột là 2:
+cout << (char)218; // ┌
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)191; // ┐
+cout << "\n";
+cout << (char)179 << "   " << (char)179; // │
+cout << "\n";
+cout << (char)179 << "   " << (char)179; // │
+cout << "\n";
+cout << (char)192; // └
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)217; // ┘
+
+Đây là đoạn code demo tạo ra ma trận 1 x 2 (1 dòng, 2 cột):
+cout << (char)218; // ┌
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)194; // ┬
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)191; // ┐
+cout << "\n";
+cout << (char)179 << "   " << (char)179 << "   " << (char)179; // │
+cout << "\n";
+cout << (char)192; // └
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)193; // ┴
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)217; // ┘
+
+Làm mẫu với trường hợp tạo ra ma trận 2 dòng 2 cột (2 x 2)
+cout << (char)218; // ┌
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)194; // ┬
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)191; // ┐
+cout << "\n";
+cout << (char)179 << "   " << (char)179 << "   " << (char)179; // │
+cout << "\n";
+	
+cout << (char)195; // ├
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)197; // ┼
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)180; // ┤
+	
+cout << "\n";
+
+cout << (char)179 << "   " << (char)179 << "   " << (char)179; // │
+cout << "\n";
+
+cout << (char)192; // └
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)193; // ┴
+cout << (char)196 << (char)196 << (char)196; // ─
+cout << (char)217; // ┘
+
+Nhiệm vụ của các Bạn là làm 2 thử thách sau đây cho Anh:
+Thử thách 1: Tạo thành lưới ô vuông có số dòng, số cột bất kỳ tùy ý người dùng với độ rộng giữa 2 cột mặc định theo hiện tại làm demo là 3 và độ rộng giữa 2 dòng mặc định theo hiện tại làm demo là 1 và lưới ô vuông này được tạo thành bởi các ký tự ascii mở rộng không bị nhìn đứt quãng
+
+Thử thách 2: Sau khi đã làm được thử thách 1 thì hãy tùy biến độ rộng giữa 2 dòng, tùy biến độ rộng giữa 2 cột theo tùy ý (vd: độ rộng giữa 2 cột là 5, độ rộng giữa 2 dòng là 2) và tạo thành lưới ô vuông với các ký tự không bị đứt quãng
+
+Bản chất 2 thử thách này chúng ta đã làm được ở đầu video rồi tuy nhiên khác trước đó ở chỗ không dùng những ký tự có trên bàn phím mà sẽ dùng những ký tự trong bảng mã ascii mở rộng để tạo thành lưới ô vuông không bị đứt quãng.
+
+Đây là đoạn code trước đó đã hoàn thành 2 thử thách trên nhưng với những ký tự có sẵn trên bàn phím: +, -, |
+int sodong = 3, socot = 3;
+	int doronggiua2cot = 3, doronggiua2dong = 1;
+
+	for(int i = 0; i < sodong; ++i)
+	{
+		cout << "+";
+		for(int j = 0; j < socot; ++j)
+		{
+			for(int k = 1; k <= doronggiua2cot; ++k)
+			{
+				cout << "-";
+			}
+			cout << "+";
+		}
+		cout << "\n";
+		for(int l = 1; l <= doronggiua2dong; ++l)
+		{
+			cout << "|";
+			for(int j = 0; j < socot; ++j)
+			{
+				for(int k = 1; k <= doronggiua2cot; ++k)
+				{
+					cout << " ";
+				}
+				cout << "|";
+			}
+			cout << "\n";
+		}
+	}
+	cout << "+";
+	for(int j = 0; j < socot; ++j)
+	{
+		for(int k = 1; k <= doronggiua2cot; ++k)
+		{
+			cout << "-";
+		}
+		cout << "+";
+	}
+
+===========> BẮT ĐẦU ĐI VẼ BÀN CỜ HOÀN CHỈNH <=============
+
+Demo ma trận 3 x 4
+
+Đầu tiên vẽ hàng trên ta nhận thấy quy tắc như sau:
+Cứ in ra góc trên cùng bên trái, sau đó lặp (số cột - 1) lần, mỗi lần in ra màn hình 3 lần gạch ngang, 1 chữ T xuôi (───┬) sau đó lặp 1 lần cuối chỉ in ra 3 gạch ngang và góc trên cùng bên phải
+
+Và cũng tương tự như trên với hàng cuối cùng của ma trận chỉ thay đổi lại góc trên cùng thành góc dưới cùng, và thay T xuôi thành T ngược
+
+số lượng gạch đứng ( | ) sẽ = số cột + 1
+
+Số lần lặp để in ra 1 gạch đứng, 3 khoảng trắng sẽ = số cột sau đó chỉ in ra thêm 1 gạch đứng nữa là xong
+số lượng dấu ├ và 3 gạch ngang rồi 1 chữ thập nó giống như phần đầu tiên lúc in ra góc trên cùng ...
+
+Đây là code đã hoàn thành của thử thách 1, các Bạn copy về rồi phát triển tiếp hoàn thành thử thách 2 luôn cho Anh:
+int sodong = 3, socot = 4;
+
+	/* Phần 1: In ra hàng ngang đầu tiên */ 
+	cout << (char)218; // ┌
+	for(int j = 1; j <= socot - 1; ++j)
+	{
+		cout << (char)196 << (char)196 << (char)196; // ─
+		cout << (char)194; // ┬
+	}
+	cout << (char)196 << (char)196 << (char)196; // ─
+	cout << (char)191; // ┐
+	cout << endl;
+
+	/* Phần 2: In ra những dòng bên trong */
+	for(int i = 1; i <= sodong - 1; ++i)
+	{
+		for(int j = 1; j <= socot; ++j)
+		{
+			cout << (char)179; // │
+			cout << "   ";
+		}
+		cout << (char)179; // │
+		cout << endl;
+		cout << (char)195; // ├
+		for(int j = 1; j <= socot - 1; ++j)
+		{
+			cout << (char)196 << (char)196 << (char)196; // ─
+			cout << (char)197; // ┼
+		}
+		cout << (char)196 << (char)196 << (char)196; // ─
+		cout << (char)180; // ┤
+		cout << endl;
+	}
+	for(int j = 1; j <= socot; ++j)
+	{
+		cout << (char)179; // │
+		cout << "   ";
+	}
+	cout << (char)179; // │
+	cout << endl;
+
+	/* Phần 3: In ra hàng ngang cuối cùng */ 
+	cout << (char)192; // └
+	for(int j = 1; j <= socot - 1; ++j)
+	{
+		cout << (char)196 << (char)196 << (char)196; // ─
+		cout << (char)193; // ┴
+	}
+	cout << (char)196 << (char)196 << (char)196; // ─
+	cout << (char)217; // ┘
+
+
+===============> VẤN ĐỀ 2: XỬ LÝ CHO NGƯỜI DÙNG ĐÁNH CỜ LÊN BÀN CỜ <====================
+
+Thì ở mức độ cơ bản nhất tức là cho phép người dùng nhập vào vị trí tọa độ dòng - cột cần đánh, sau đó vẽ lại và in ra bàn cờ ở vị trí tọa độ tương ứng có quân cờ tương ứng
+Video demo của 1 em làm bằng pascal: https://www.facebook.com/baominh.tran.3762584/videos/173873630416432/
+
+Những thứ cần phải làm:
+1/ Xử lý thêm trong hàm vẽ bàn cờ để khi in ra thì nó sẽ có chỉ số dòng ở lề bên trái ứng với từng dòng, và có chỉ số cột ở lề bên trên ứng với từng cột. Và chỉ số tùy ý có thể bắt đầu từ 0 hay 1
+
+2/ Sau khi đã làm được xử lý 1 thì thiết kế quy trình của game là 1 vòng lặp vô tận cứ thế lặp đến khi nào có điều kiện kết thúc thì dừng (có ai đó thắng hoặc cả 2 đều hòa). Liên tục hỏi người dùng nhập vào vị trí tọa độ quân cờ cần đánh (dòng - cột) và khi nhận được dữ liệu tọa độ dòng - cột cần đánh thì sẽ xóa hết màn hình và vẽ lại bàn cờ ở vị trí tọa độ vừa chọn đánh có quân cờ tương ứng. Lưu ý là mỗi lần nhập tọa độ là luân phiên nhau giữa quân cờ X và O. Tức là nếu lần nhập tọa độ đầu tiên là cho quân cờ X thì lần tiếp theo sẽ là cho quân cờ O.
+
+Nhắc lại 1 số kiến thức cần để làm cho yêu cầu 2:
++ Xóa màn hình trong C++ Visual Studio: system("cls")
++ Vòng lặp vô tận: while(true) hay while(1) hay while(69) hay for(;;)
+
+Đã làm xong thử thách 1 và có thêm câu đố sau cùng với các Bạn ở cuối video, các Bạn hãy cố gắng suy nghĩ thử thách làm xem nhé.
+
+Đi làm thử thách số 2
+
+Ta muốn quân cờ X có màu vàng và O có màu đỏ thì làm sao?
+
+textcolor(14); // 14 là mã màu vàng
+cout << "HELLO WORLD!";
+textcolor(7); // 12 là mã màu đỏ, 7 là mã màu trắng (tức là màu bình thường mặc định xuất ra)
+
+Chúng ta có thể cải tiến việc thay vì phải đi xóa màn hình rồi lại vẽ lại bàn cờ từ đầu đến cuối chỉ để in ra đúng thêm 1 quân cờ mà ta nhập tọa độ trước đó thì giờ đây không cần xóa màn hình hay vẽ lại nữa mà chỉ cần cho con trỏ nháy nhảy đến đúng ngay vị trí tọa độ mà ta muốn nhắm tới sau đó nó in ra ký tự quân cờ mà ta muốn thế là xong
+=> Muốn làm được điều đó chúng ta dùng 1 hàm gotoxy có trong thư viện Windows.h của Visual Studio có sẵn, nhờ nó mà muốn cho con trỏ chuột nhảy đến 1 vị trí bất kỳ nào trong khung Console đều được cả
+
+Chỉ đúng khi độ rộng giữa 2 cột = 3, độ rộng giữa 2 dòng = 1
+(0, 0) => gotoxy(4, 3);
+(0, 1) => gotoxy(8, 3);
+(0, 2) => gotoxy(12, 3);
+(0, 3) => gotoxy(16, 3);
+(1, 3) => gotoxy(16, 5);
+(2, 3) => gotoxy(16, 7);
+
+Việc gotoxy đến vị trí tương ứng với tọa độ dòng - cột của quân cờ nó còn phụ thuộc theo độ rộng giữa 2 dòng, độ rộng giữa 2 cột của bàn cờ
+=> TÌM RA ĐƯỢC CÔNG THỨC TỔNG QUÁT
+
+Góc trên cùng bên trái của bàn cờ ở vị trí x = 2, y = 2
+độ rộng giữa 2 cột = 5
+
+(0, 0) => gotoxy với x = 2 + doronggiua2cot / 2 + 1 tức là x = 5
+(0, 1) => gotoxy với x = 5 (Trước đó) + doronggiua2cot + 1 tức là x = 5 + 5 + 1 = 11
+(0, 2) => gotoxy với x = 11 (Trước đó) + doronggiua2cot + 1 tức là x = 11 + 5 + 1 = 17
+(0, 3) => gotoxy với x = 17 (Trước đó) + doronggiua2cot + 1 tức là x = 17 + 5 + 1 = 23
+
+CÔNG THỨC TỔNG QUÁT là:
+Mặc định ban đầu nếu ô (0, 0) là x = 5 (2 + dongronggiua2cot / 2 + 1)
+Nếu muốn đến 1 ô ở tọa độ (0, n) thì x = 5 + n * (doronggiua2cot + 1)
+
+Chỉ đúng khi độ rộng giữa 2 cột = 5, độ rộng giữa 2 dòng = 1
+(0, 0) => gotoxy(5, 3);
+(1, 0) => gotoxy(5, 5);
+(2, 0) => gotoxy(5, 7);
+
+độ rộng giữa 2 cột = 5, độ rộng giữa 2 dòng = 3
+(0, 0) => gotoxy(5, 4);
+(1, 0) => gotoxy(5, 8);
+(2, 0) => gotoxy(5, 12)
+
+CÔNG THỨC TỔNG QUÁT là:
+Mặc định ban đầu nếu ô (0, 0) là y = 4 (2 + dongronggiua2dong / 2 + 1)
+Nếu muốn đến 1 ô ở tọa độ (n, 0) thì y = 4 + n * (doronggiua2dong + 1)
+
+TỔNG KẾT LUÔN
+Đầu tiên ta phải xác định được góc trên cùng bên trái của bàn cờ nằm ở vị trí x = bao nhiêu? y = bao nhiêu?
+
+Sau đó nếu muốn đi đến 1 ô có tọa độ (m, n) => gotoxy(x + doronggiua2cot / 2 + 1 + n * (doronggiua2cot + 1), y + doronggiua2dong / 2 + 1 + m * (doronggiua2dong + 1);
+
+độ rộng giữa 2 cột = 3, độ rộng giữa 2 dòng = 1
+ban đầu góc trên cùng bên trái của bàn cờ tại vị trí x = 2, y = 2
+(0, 0) => gotoxy(4, 3)
+(1, 3) => gotoxy(16, 5);
+
+
+độ rộng giữa 2 cột = 5, độ rộng giữa 2 dòng = 3
+ban đầu góc trên cùng bên trái của bàn cờ tại vị trí x = 2, y = 2
+(0, 0) => gotoxy(5, 4)
+(2, 0) => gotoxy(5, 12)
+
+công thức để biết được dòng Luot di hien tai la cua quan co bắt đầu ở vị trí y = bao nhiêu?
+y = doronggiua2dong * sodong + sodong + 1 + 2
+
+int wherex()
+  {
+  CONSOLE_SCREEN_BUFFER_INFO csbi;
+  if (!GetConsoleScreenBufferInfo(
+         GetStdHandle( STD_OUTPUT_HANDLE ),
+         &csbi
+         ))
+    return -1;
+  return csbi.dwCursorPosition.X;
+  }
+
+int wherey()
+  {
+  CONSOLE_SCREEN_BUFFER_INFO csbi;
+  if (!GetConsoleScreenBufferInfo(
+         GetStdHandle( STD_OUTPUT_HANDLE ),
+         &csbi
+         ))
+    return -1;
+  return csbi.dwCursorPosition.Y;
+  }
+Giải pháp tham khảo tại nguồn: http://www.cplusplus.com/forum/general/74380/
+Từ khóa search: how to get position cursor in c/c++ console
+
+CONSOLE_SCREEN_BUFFER_INFO csbi;
+    int columns, rows;
+
+    GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+    columns = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+    rows = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
+
+    printf("columns: %d\n", columns);
+    printf("rows: %d\n", rows);
+Giải pháp tham khảo tại nguồn: https://stackoverflow.com/questions/23369503/get-size-of-terminal-window-rows-columns
+Từ khóa search: How to get width of cmd in c/c++ console visual studio
+
+THỬ THÁCH CHO CÁC BẠN ĐỂ HOÀN TẤT LUÔN CÁI VẤN ĐỀ SỐ 2 NÀY
+Các Bạn hãy kết hợp gotoxy đã học trong video này và cách bắt key từ bàn phím để khởi đầu cho con trỏ chuột nhảy vào 1 ô bất kỳ vd: (0, 0) sau đó dùng các phím mũi tên trái phải lên xuống để điều hướng con trỏ chuột nhảy vào ô tiếp theo tương ứng với mệnh lệnh điều khiển từ phím (nhờ vào gotoxy để cho con trỏ nhảy vào ô tương ứng) và khi đến 1 ô muốn đánh cờ vào thì chỉ việc nhấn phím Space thì ngay tại đó sẽ có quân cờ hiển thị ra
+
+Cách bắt key từ bàn phím:
+Cách 1: Dùng hàm GetAsyncKeyState(Virtual Key) trong thư viện Windows.h
+Danh sách các mã key để tra cứu: https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes hoặc google search từ khóa: Virtual Key Code
+Cách dùng:
+if(GetAsyncKeyState(VK_RIGHT))
+		{
+			cout << "\nDang nhan vao phim mui ten qua phai";
+		}
+		else if(GetAsyncKeyState(VK_LEFT))
+		{
+			cout << "\nDang nhan vao phim mui ten qua trai";
+		}
+		else if(GetAsyncKeyState(VK_UP))
+		{
+			cout << "\nDang nhan vao phim mui ten di len";
+		}
+		else if(GetAsyncKeyState(VK_DOWN))
+		{
+			cout << "\nDang nhan vao phim mui ten di xuong";
+		}
+		else if(GetAsyncKeyState(VK_SPACE))
+		{
+			cout << "\nDang nhan vao phim SPACE";
+		}
+		else if(GetAsyncKeyState(VK_LBUTTON))
+		{
+			cout << "\nDang nhan chuot trai";
+		}
+		else if(GetAsyncKeyState(VK_RBUTTON))
+		{
+			cout << "\nDang nhan chuot phai";
+		}
+		else if(GetAsyncKeyState(VK_RETURN))
+		{
+			cout << "\nDang nhan phim enter";
+		}
+
+
+Cách 2: Dùng getch trong thư viện conio.h
+
+char c = getch(); // chờ nhận vào 1 phím từ bàn phím
+
+		if(c == 97 || c == 65) // ngoài việc có thể so sánh với ký tự: if(c == 'a' || c == 'A') thì có thể so sánh theo mã ASCII của ký tự đó (A là 65, a là 97)
+		{
+			cout << "\nDang nhan vao phim a";
+		}
+		else if(c == 'w' || c == 'W')
+		{
+			cout << "\nDang nhan vao phim w";
+		}
+		else if(c == 'd' || c == 'D')
+		{
+			cout << "\nDang nhan vao phim d";
+		}
+		else if(c == 's' || c == 'S')
+		{
+			cout << "\nDang nhan vao phim s";
+		}
+
+
+Vấn đề là nếu mình muốn bắt được những phím như qua trái, qua phải, lên, xuống, enter, space ... thì bản chất đây đều là những phím chức năng nên nó không có hiển thị ra màn hình mà mình sẽ đi so sánh nó theo mã ASCII
+
+Left: 75 => trùng mã ASCII với phím: K
+Right: 77 => trùng mã ASCII với phím:  M
+Up: 72 => trùng mã ASCII với phím:  H
+Down: 80 => trùng mã ASCII với phím:  P
+Space: 32
+Enter: 13
+Esc: 27
+Del: 83
+
+Đoạn code để tra cứu mã ASCII của phím bất kỳ trên bàn phím:
+while(true)
+	{
+		char c = getch(); // chờ nhận vào 1 phím từ bàn phím
+
+		cout << "\nBan dang nhan vao phim co ma ascii la: " << (int)c;
+}
+
+Đoạn code xử lý nhận diện tổng quát các phím trên bàn phím khi nhấn vào
+char c = getch(); // chờ nhận vào 1 phím từ bàn phím
+
+		if(c == 77 || c == 'd' || c == 'D')
+		{
+			cout << "\nDang nhan vao phim mui ten qua phai";
+		}
+		else if(c == 75 || c == 'a' || c == 'A')
+		{
+			cout << "\nDang nhan vao phim mui ten qua trai";
+		}
+		else if(c == 72 || c == 'w' || c == 'W')
+		{
+			cout << "\nDang nhan vao phim mui ten di len";
+		}
+		else if(c == 80 || c == 's' || c == 'S')
+		{
+			cout << "\nDang nhan vao phim mui ten di xuong";
+		}
+		else if(c == 32)
+		{
+			cout << "\nDang nhan vao phim SPACE";
+		}
+		else if(c == 13)
+		{
+			cout << "\nDang nhan vao phim ENTER";
+		}
+
+Đi kèm với việc bắt key từ bàn phím bằng getch thì ta có 1 hàm gọi là hàm kbhit. Hàm này có chức năng nhận biết được có đang nhấn vào 1 phím bất kỳ nào hay không? và nó cũng là 1 hàm theo kiểu giống hàm AsyncKey trong Windows.h
+
+while(true)
+	{
+		if(kbhit()) // nhận biết được có tương tác từ bàn phím
+		{
+			char c = getch(); // chờ nhận vào 1 phím từ bàn phím
+
+			if(c == -32) // Đối với các phím chức năng nó sẽ xử lý ra -32 trước thì mính bắt theo điều kiện này để phân biệt được với phím in ra được
+			{
+				c = getch();
+				if(c == 77)
+				{
+					cout << "\nDang nhan vao phim mui ten qua phai";
+				}
+				else if(c == 75)
+				{
+					cout << "\nDang nhan vao phim mui ten qua trai";
+				}
+				else if(c == 72)
+				{
+					cout << "\nDang nhan vao phim mui ten di len";
+				}
+				else if(c == 80)
+				{
+					cout << "\nDang nhan vao phim mui ten di xuong";
+				}
+			}
+			else if(c == 32)
+			{
+				cout << "\nDang nhan vao phim SPACE";
+			}
+			else if(c == 13)
+			{
+				cout << "\nDang nhan vao phim ENTER";
+			}
+			else if(c == 'd' || c == 'D')
+			{
+				cout << "\nDang nhan vao phim mui ten qua phai";
+			}
+			else if(c == 'a' || c == 'A')
+			{
+				cout << "\nDang nhan vao phim mui ten qua trai";
+			}
+			else if(c == 'w' || c == 'W')
+			{
+				cout << "\nDang nhan vao phim mui ten di len";
+			}
+			else if(c == 's' || c == 'S')
+			{
+				cout << "\nDang nhan vao phim mui ten di xuong";
+			}
+		}
+		cout << "\nHELLO WORLD!"; // Xe Chay
+	}
+
+Các Bạn hãy kết hợp gotoxy đã học trong video này và cách bắt key từ bàn phím để khởi đầu cho con trỏ chuột nhảy vào 1 ô bất kỳ vd: (0, 0) sau đó dùng các phím mũi tên trái phải lên xuống để điều hướng con trỏ chuột nhảy vào ô tiếp theo tương ứng với mệnh lệnh điều khiển từ phím (nhờ vào gotoxy để cho con trỏ nhảy vào ô tương ứng) và khi đến 1 ô muốn đánh cờ vào thì chỉ việc nhấn phím Space thì ngay tại đó sẽ có quân cờ hiển thị ra
+
+
+/* So sánh giữa 2 cách bắt key từ bàn phím thì ta thấy cách dùng getch nó không bị độ trễ và không bị quá nhạy như hàm GetAsyncKeyState
+		=> Nên dùng getch */
+		if(GetAsyncKeyState(VK_RIGHT)) // Right
+		{
+			if(toado_cot < socot - 1)
+				toado_cot++;
+
+			// công thức để nhảy đến 1 ô có vị trí tọa độ dòng, cột bất kỳ
+			gotoxy(vitrixbandaucuabanco + doronggiua2cot / 2 + 1 + toado_cot * (doronggiua2cot + 1), vitriybandaucuabanco + doronggiua2dong / 2 + 1 + toado_dong * (doronggiua2dong + 1));
+
+		}
+		else if(GetAsyncKeyState(VK_LEFT)) // Left
+		{
+			if(toado_cot > 0)
+				toado_cot--;
+
+			// công thức để nhảy đến 1 ô có vị trí tọa độ dòng, cột bất kỳ
+			gotoxy(vitrixbandaucuabanco + doronggiua2cot / 2 + 1 + toado_cot * (doronggiua2cot + 1), vitriybandaucuabanco + doronggiua2dong / 2 + 1 + toado_dong * (doronggiua2dong + 1));
+
+
+		}
+		else if(GetAsyncKeyState(VK_UP)) // Up
+		{
+			if(toado_dong > 0)
+				toado_dong--;
+
+			// công thức để nhảy đến 1 ô có vị trí tọa độ dòng, cột bất kỳ
+			gotoxy(vitrixbandaucuabanco + doronggiua2cot / 2 + 1 + toado_cot * (doronggiua2cot + 1), vitriybandaucuabanco + doronggiua2dong / 2 + 1 + toado_dong * (doronggiua2dong + 1));
+
+
+		}
+		else if(GetAsyncKeyState(VK_DOWN)) // Down
+		{
+			if(toado_dong < sodong - 1)
+				toado_dong++;
+
+			// công thức để nhảy đến 1 ô có vị trí tọa độ dòng, cột bất kỳ
+			gotoxy(vitrixbandaucuabanco + doronggiua2cot / 2 + 1 + toado_cot * (doronggiua2cot + 1), vitriybandaucuabanco + doronggiua2dong / 2 + 1 + toado_dong * (doronggiua2dong + 1));
+
+
+		}
+		Sleep(100); // để cho nó giảm độ nhạy lại chứ nếu không có nó từ ô đầu tiên bấm 1 lần nó nhảy luôn ô cuối cùng
+
+Có 1 vấn đề xảy ra là khi nhấn phím Space để đánh cờ thì ngay tại vị trí dấu nháy đó in ra quân cờ và dấu nháy sẽ nằm sang bên cạnh, và lúc này nếu nhấn Space nữa thì nó lại đánh nữa cho nên giải pháp khắc phục như thế nào? 
+=> Cứ mỗi khi đánh xong thì cho dấu nháy nhảy sang ô bên cạnh (bên phải), nếu ô bên cạnh đã hết (thuộc cột cuối cùng) thì sẽ cho nó nhảy về ô đầu tiên của hàng mới, nếu cũng không còn hàng nào ở dưới nữa thì cho nó nhảy về lại hàng đầu tiên của bàn cờ
+
+
+Có những vấn đề sau đây mà nếu giải quyết xong được nó là chúng ta xong được vấn đề số 2 cho phép đánh cờ lên bàn cờ
+1/ Khi 1 quân cờ được đánh thì nên làm sao đó để cho vị trí quân cờ đó được nổi bật lên để người chơi kia nhìn thấy rõ mà phân tích
+
+Ý Tưởng: Nước cờ vừa được đánh sẽ có 1 màu gì đó nổi bật khác biệt so với 2 màu vàng - đỏ bình thường trên bàn cờ. Tiếp tục nước tiếp theo đánh ở vị trí khác thì nước mới được đánh đó lại được nổi bật còn nước trước đó nổi bật thì sẽ trở lại bình thường (vàng hay đỏ như cũ)
+
+
+2/ Luôn có bảng hiện thông báo cho biết lần đánh hiện tại là của X hay O và có thể có thêm 1 số thông báo khác và vị trí xuất hiện cho nó nằm ở ngay dưới bàn cờ (ngay dưới dòng cuối cùng của bàn cờ) hoặc ngay bên hông của bàn cờ (ngay cột bên cạnh của cột cuối cùng của bàn cờ)
+
+Công thức để dấu nháy sẽ luôn nằm ở dòng đầu tiên dưới bàn cờ: x = 1, y = (doronggiua2dong + 1) * sodong + vitriybandau + 1
+Công thức để dấu nháy sẽ nằm ở dòng ngay sau cột cuối cùng của bàn cờ: y = 1, x = (doronggiua2cot + 1) * socot + vitrixbandau + 1
+
+3/ Nếu bàn cờ chúng ta đã tùy biến cho nó theo độ rộng giữa 2 cột, độ rộng giữa 2 dòng bất kỳ thì sẽ tốt hơn nữa nếu chúng ta có thể tùy biến cho vị trí đầu tiên xuất hiện của bàn cờ ở 1 vị trí mà ta muốn có thể là lùi xuống bao nhiêu dòng so với lề bên trên và lùi qua bao nhiêu cột so với lề bên trái
+
+4/ Nếu ô cần đánh đã có sự xuất hiện của quân cờ rồi thì báo lỗi thông báo không cho đánh
+
+Ý Tưởng 1: Làm cách nào đó để có thể kiểm tra tại 1 vị trí x, y bất kỳ trên khung cmd xem tại chỗ đó đang có ký tự gì được in ra màn hình? => Tìm hiểu trên google xem coi có cách gì không?
+
+Ý Tưởng 2: Song song với bàn cờ được vẽ ra trên khung cmd thì ta có 1 mảng 2 chiều a tương ứng bên ngoài, và với mỗi lần đánh cờ vào 1 vị trí dòng - cột cụ thể trên bàn cờ thì tương ứng vị trí đó trên mảng 2 chiều chúng ta ghi nhận lại quân cờ để mỗi lần cần đánh vào 1 vị trí trên bàn cờ chúng ta chỉ việc đối chiếu vị trí đó trên mảng 2 chiều a xem tại vị trí tương ứng đó đã có quân cờ gì chưa? nếu có rồi thì không cho đánh. Làm cách này cũng là để qua vấn đề số 3: xét tính thắng/thua/hòa chúng ta sẽ đi kiểm tra trên mảng 2 chiều a và kết luận
+
+5/ Có thể làm sẵn 1 tính năng là không đánh trong từng ô mà sẽ đánh theo các đường thẳng giao điểm dòng - cột. Để tùy ý người chơi muốn đánh theo kiểu tọa độ giao điểm thì đánh, còn nếu muốn đánh trong từng ô thì cũng đánh được => tức là mỗi lần điều hướng các phím mũi tên trái phải lên xuống thì dấu nháy nó sẽ nhảy tương ứng mệnh lệnh điều khiển qua tọa độ giao điểm khác chứ không có đi vào trong ô như hiện tại => muốn làm được thì cũng phải nghiên cứu ra được CÔNG THỨC để cho dấu nháy nó sẽ nhảy vào tọa độ giao điểm bất kỳ mà ta muốn dựa theo điều hướng. Lưu ý là công thức nó phải luôn luôn ĐÚNG trong mọi tùy chỉnh của bàn cờ về số dòng, số cột, độ rộng giữa 2 dòng, độ rộng giữa 2 cột bất kỳ, vị trí đầu tiên xuất hiện của bàn cờ. Bàn cờ khi mà chọn đánh theo tọa độ giao điểm thì số dòng & số cột sẽ phát sinh thêm 1 đơn vị (vd: ban đầu là 5 x 5 thì nếu đánh theo giao điểm sẽ ra là 6 x 6)
+
+CÔNG THỨC:
+
+Giả sử ban đầu dấu nháy ở vị trí x = 1, y = 1
+bàn cờ trong ví dụ này có độ rộng giữa 2 cột là 3, độ rộng giữa 2 dòng là 1, vị trí x ban đầu = 1, vị trí y ban đầu = 1
+
+(0, 0) => x = 1, y = 1
+(0, 1) => x = 5, y = 1
+(0, 2) => x = 9, y = 1
+(0, 3) => x = 13, y = 1
+
+(1, 0) => x = 1, y = 3
+(2, 0) => x = 1, y = 5
+(3, 0) => x = 1, y = 7
+
+Quy tắc để đến được tọa độ 1 ô (m, n) bất kỳ (dòng m, cột n) với m, n bắt đầu từ 0:
+x = n * (doronggiua2cot + 1) + vitrixbandau
+y = m * (doronggiua2dong + 1) + vitriybandau
+
+Lưu ý: 
+
+1/ Vì đánh theo chế độ tọa độ giao điểm của dòng - cột sẽ làm phát sinh thêm 1 dòng, 1 cột cho nên phải cẩn thận điều này. Giả sử mảng a lưu trữ chỉ có tối đa 5 dòng 5 cột, và mình khai báo số dòng và số cột chạm tới giá trị tối đa đó thì khi chọn chế độ đánh theo giao điểm mình tăng thêm 1 đơn vị sẽ bị đi vào 1 chỉ số index không hợp lệ của mảng a. Có thể sẽ không có lỗi xảy ra nếu như trong thời điểm đó chưa có chương trình nào mượn vùng nhớ đó để sử dụng, tuy nhiên nếu có chương trình nào mượn đúng vùng nhớ đó để sử dụng thì ta sẽ bị văng lỗi ngay.
+
+Giải pháp: Lường trước tình huống đó khi người dùng chọn chế độ đánh theo điểm sẽ đi kiểm tra số dòng, số cột người dùng khai báo xem có chạm đến mức tối đa khai báo cho mảng a không? Nếu có thì khuyên người dùng hoặc là tăng kích thước mảng a thêm 1 đơn vị hoặc là giảm số dòng, số cột đi 1 đơn vị
+
+2/ Cả việc cấp phát các phần tử của mảng a ban đầu là giá trị khoảng trắng ' ' thì cũng nên cấp phát tất cả mảng luôn chứ không chỉ cấp phát theo đúng phạm vi số dòng, số cột cần sử dụng. Bởi vì lỡ như người dùng chọn chế độ đánh theo giao điểm thì như vậy ở vị trí dòng + 1, cột + 1 phát sinh thêm bên mảng a sẽ không phải là ký tự khoảng trắng ' ' mà sẽ là NULL dẫn đến không so sánh được với điều kiện if và bị rơi vào else báo lỗi chỗ này đã có quân cờ
+
+Giải pháp: Nên cấp phát luôn toàn bộ mảng a theo kích cỡ tối đa khai báo tất cả đều là ký tự khoảng trắng => dùng hàm fill bên C++
+
+
+XONG VẤN ĐỀ 2: ĐÁNH CỜ LÊN BÀN CỜ
+
+TIẾN LÊN VẤN ĐỀ 3: ĐI XÉT TÍNH THẮNG/THUA/HÒA của bàn cờ
+Tức là mỗi nước cờ người dùng đánh vào sẽ đi kiểm tra xem nước đó đã có quyết định ai thắng chưa? hay nước đó cũng là nước cuối cùng của bàn cờ còn có thể đánh được để kết luận là đã hòa.
+=> Các Bạn dựa theo bài tập caro Anh đã làm ở phần đầu tiên của loạt video bài này để ráp nó vào game của chúng ta để mình kết luận được chiến thắng
+
+Bắt đầu xét đến 1 số vấn đề phụ nên làm để game được tốt hơn:
+1/ Sau khi ván cờ dừng lại (có thể vì đã có ai chiến thắng hoặc cả 2 hòa nhau) thì sẽ có thông báo hỏi rằng có muốn chơi lại từ đầu không? Nếu có chọn phím Y, nếu không thì nhấn phím bất kỳ nào khác để kết thúc
+
+Nếu kết thúc thì hỏi có muốn chơi lại? Nếu chọn Y thì cho phép chơi lại: Lúc đó ta sẽ đi xóa hết những gì đang có trên màn hình sau đó vẽ lại bàn cờ trống không như ban đầu và sau đó nó sẽ tiếp tục đi vào vòng lặp while(true) để tạo lại diễn hoạt cho game: Reset lại mảng 2 chiều a, 
+
+2/ Khi có nước đi chiến thắng thì ngoài việc thông báo đã có nước đi chiến thắng thì phải nổi bật nước đi chiến thắng đó lên để nhìn cho kỹ
+
+Khi xác định chiến thắng thì xác định cụ thể chiến thắng theo đường nào (ngang, dọc, chéo chính, chéo phụ) sau đó đi theo đúng công thức của đường đi chiến thắng đó để lấy ra được tất cả vị trí tọa độ dòng - cột của các ô có liên quan đến chiến thắng đó (các ô có quân cờ trùng với quân cờ vừa đánh liên tiếp nhau) sau đó cho dấu nháy nhảy đến từng ô tương ứng và in màu lặp đủ 15 lần màu thì sẽ nháy xong.
+
+3/ Luật chơi có thể tùy biến theo 2 thể thức sau: 
+	+ Tùy biến 1: Số lượng quân liên tiếp tối thiểu để kết luận chiến thắng có thể tùy ý người dùng cho mỗi trận đấu, ví dụ trận này có thể mặc định chỉ cần có 3 quân liên tiếp tối thiểu là thắng, trận sau có thể là 4 quân liên tiếp tối thiểu là thắng, còn bình thường thì là 5 quân liên tiếp tối thiểu là thắng.
+
+	+ Tùy biến 2: Nếu với những quân liên tiếp tối thiểu đó nhưng nếu nước đi chiến thắng gồm các quân cờ liên tiếp đó mà bị chặn cả 2 đầu thì không được xem là thắng (như hiện tại là chỉ cần đạt mức liên tiếp tối thiểu bao nhiêu quân đã là kết luận chiến thằng dù cho có hay không có bị chặn 2 đầu)
+
+Ngoài ra có thêm 1 vấn đề lưu ý nhắc nhở như sau: Trước khi chúng ta tiếp tục làm tiếp những tính năng bổ sung nâng cao sau này thì ngay lúc này chúng ta nên xem lại những code đã làm từ đầu tới giờ và thấy những đoạn code nào có thể rút ngắn lại được thì nên rút ngắn lại để cho gọn gàng (vd: các đoạn code điều hướng tọa độ để di chuyển dấu nháy đến ô tương ứng, các đoạn code in ra nội dung câu thông báo tại 1 vị trí cụ thể ...) các Bạn có thể gom nó vào 1 hàm và thay vì gọi ra cả 1 mớ thì Bạn chỉ cần gọi lại hàm là xong
+
+Ngoài ra ở mỗi lần chơi thì cho phép người dùng có thể cấu hình thông số kỹ thuật của bàn cờ tùy ý (số dòng, số cột, độ rộng giữa 2 dòng - cột, vị trí ban đầu bàn cờ xuất hiện, có đánh theo giao điểm dòng cột hay không? Số lượng quân cờ tối thiểu để thắng là bao nhiêu? Có kích hoạt chế độ chặn 2 đầu là không cho thắng không?) để lỡ ván chơi mới họ có nhu cầu thì có thể sửa lại được chứ không cần phải tắt đi rồi sửa lại code. Ngoài ra cũng tính đến trường hợp người chơi không có nhu cầu thay đổi thông số kỹ thuật thì để đỡ mất công nhập lại cả 1 mớ đó thì ta chỉ hỏi 1 câu từ đầu là Bạn có muốn chơi lại với bàn cờ có thông số kỹ thuật y như lần chơi trước đó không? Nếu chọn có thì vô luôn khỏi phải suy nghĩ, nếu chọn không thì cho phép nhập các thông số mới sau đó tiến hành chơi như thường.
+
+ĐẾN NGAY LÚC NÀY CHÚNG TA ĐÃ TỰ HÀO VÀ NÓI RẰNG CHÚNG TA ĐÃ HOÀN THÀNH ĐƯỢC GAME Ở 1 MỨC ĐỘ THUẦN TÚY (MỨC ĐỘ CƠ BẢN NHẤT CHƠI ĐƯỢC VÀ CHƯA CÓ TÍNH NĂNG GÌ THÊM)
+
+Sau khi làm được điều cơ bản trên thì mới xét đến những tính năng bổ sung giúp cho game hoàn hảo hơn
+
+1/ Có Menu lựa chọn các tính năng, giới thiệu thông tin tác giả, giới thiệu các phím hỗ trợ chơi ... => thiết kế giao diện
+
+TÍNH NĂNG CƠ BẢN:
+2/ Cho phép lưu lại tình trạng bàn cờ đang đánh dở rồi bất kỳ khi nào muốn thì load lại đánh tiếp => tính năng
+=> Xử lý ghi/đọc tập tin
+
+3/ Tính thời gian của mỗi nước đi ví dụ tối đa 1 phút suy nghĩ, nếu hết thời gian tối đa cho phép đó mà chưa đánh ra được cờ thì người chơi ở lần đánh cờ đó thua, từ đây lại phát sinh ra thêm vấn đề là nếu đang trong quá trình tính thời gian mà người chơi đó có việc bận ngang thì có thể pause lại (tạm dừng) - tuy nhiên để đảm bảo tính công bằng thì bàn cờ sẽ bị ẩn đi hoặc làm 1 cách gì đó để không thấy được nữa - chỉ khi nào play lại thì mới hiện lại bàn cờ. Ngoài ra có thể có 1 chế độ chơi nâng cao nữa là bàn cờ nếu khi hết chỗ để đánh tức là bình thường sẽ kết luận 2 đấu thủ hòa nhau, tuy nhiên có 1 chế độ nữa là sẽ tính tổng thời gian mỗi nước đánh của mỗi cờ thủ xem ai dùng ít thời gian nhất để đánh cờ thì người đó chiến thắng - còn nếu tính tổng thời gian mà cả 2 vẫn bằng nhau thì đây đúng là kỳ phùng địch thủ không ai thắng hết.
+
+Tính năng Play/Pause là khi người dùng nhấn phím P trên bàn phím, nếu đang ở trong tình trạng tính thời gian thì sau khi nhấn nó sẽ ở trạng thái pause (tạm dừng), còn nếu đang ở trong tình trạng tạm dừng (pause) thì sau khi nhấn nó sẽ ở trạng thái play (tính thời gian tiếp tục). Và khi đang ở trong trạng thái pause thì không thể đánh cờ được (nói chung là không thể làm gì khác ngoài việc nhấn lại nút P để Play lại)
+
+4/ Tính năng Undo cho phép bỏ nước vừa đánh hoặc Redo trở lại tình trạng trước khi Undo => tính năng
+
+=> Nếu nhấn phím U thì nghĩa là Undo, nhấn phím R nghĩa là Redo. Và có thể nhấn nhiều lần để Undo/Redo nhiều lần
+
+Ý TƯỞNG CỦA UNDO: Mỗi lần đánh vào 1 tọa độ ô trên bàn cờ để ghi quân cờ xuống thì chúng ta cũng đưa tọa độ ô vừa đánh đó vào trong 1 ngăn xếp để lưu trữ lại. Và khi lệnh Undo được gọi thì ngăn xếp sẽ lấy phần tử trên đỉnh đầu của nó bỏ ra và xét tọa độ đỉnh đó đang ở ô nào trên bàn cờ thì tiến hành cho dấu nháy nhảy đến ô tương ứng đó và xóa quân cờ trên đó đi (và nhớ xóa luôn trong mảng a) - đồng thời nếu quân cờ đó là quân nào thì sau khi xóa xong phải cập nhật lại lượt đánh tiếp theo là của quân đó
+
+Ý TƯỞNG CỦA REDO: Mỗi lần làm tính năng Undo thì thay vì lấy phần tử đầu ngăn xếp của Undo đem ra xét để xóa vị trí quân cờ tại đó rồi bỏ nó ra khỏi ngăn xếp thì chúng ta sẽ đem tọa độ đó bỏ vào trong 1 cái ngăn xếp khác gọi là ngăn xếp redo, cứ thế cho đến khi nào cần dùng đến tính năng Redo thì sẽ làm giống y chang như tính năng Undo đó là đem tuần tự các phần tử đầu ngăn xếp redo đem ra xét duyệt vị trí tọa độ rồi cho dấu nháy nhảy đến tọa độ tương ứng và đánh quân cờ vào
+
+Khác nhau của Undo & Redo:
+1/ Undo lấy dữ liệu vị trí tọa độ mỗi nước đánh của người chơi lên bàn cờ rồi bỏ tuần tự vào trong ngăn xếp, Redo thì lấy các vị trí tọa độ lấy ra từ Undo bỏ tuần tự vào trong ngăn xếp
+2/ Undo khi có được vị trí tọa độ lấy ra từ ngăn xếp thì sẽ cho dấu nháy nhảy đến đó để xóa đi còn Redo khi có được vị trí tọa độ lấy ra từ ngăn xếp thì cho dấu nháy nhảy đến đó để điền quân cờ ứng với lượt đi hiện tại vào
+
+
+TÍNH NĂNG NÂNG CAO:
+5/ Đánh giữa người với máy => cái này khó và hay nè: tính năng
+=> Tìm hiểu thuật toán minimax với bàn cờ 3 x 3
+=> Tìm hiểu thuật toán cắt tỉa anpha beta với bàn cờ có kích thước bất kỳ
+
+6/ Cho phép sử dụng chuột để đánh cờ chứ không chỉ mỗi sử dụng phím: Đưa con chuột vào ô cần đánh sau đó click chuột trái là đánh cờ vào ô đó => tính năng
+=> Tìm hiểu cách sử dụng chuột trong cmd của visual studio (search google bằng tiếng Việt & tiếng Anh để cố gắng tìm ra giải pháp)
+
+và còn rất nhiều những tính năng thú vị có thể tùy ý các Bạn sáng tạo phát triển thêm ...
+
+Làm tính năng sử dụng chuột:
+Như đã trình bày cho các Bạn xem trong video, là việc sử dụng chuột sẽ mang lại sự tiện dụng cho game/ứng dụng của chúng ta
+
+Lưu ý: Là việc sử dụng chuột Anh làm demo trong video này không phải giá trị của nó chỉ là đối với game này thôi, mà Bạn hiểu được cách sử dụng nó để có thể ứng dụng làm được cho mọi game khác, mọi ứng dụng bất kỳ
+
+Search google từ khóa: Cách sử dụng chuột trong lập trình c/c++ console hoặc bằng tiếng Anh nếu tiếng Việt không ra được kết quả
+
+Sự tự tìm hiểu kiến thức rất quan trọng (vd: Tìm hiểu cách làm sao để chèn 1 tấm hình vào trong c/c++ console, cách làm sao để phát 1 đoạn nhạc trong c/c++ console ...)
+
+Anh đã chỉ cho các Bạn cách sử dụng chuột trong c/c++ và cách lấy được vị trí tọa độ chuột khi nó nhấn xuống trên màn hình => từ đây các Bạn kết hợp vào game mình đang làm để cho nó sử dụng chuột được và kiểm tra vị trí tọa độ click chuột xuống có hợp lệ không? nếu có thì in ra quân cờ tại vị trí tương ứng đó và tiến hành đi kiểm tra tính thắng/thua/hòa ...
+
+1/ Ráp code sử dụng chuột vào game đang làm để game có thể sử dụng chuột được
+2/ kiểm tra vị trí tọa độ click chuột xuống có hợp lệ không?
+
+Tọa độ hợp lệ là khi thỏa 2 yếu tố sau:
+Yếu tố 1: Phải click trong phạm vi của bàn cờ chứ không được nằm bên ngoài bàn cờ
+Yếu tố 2: Nếu click trong phạm vi bàn cờ thì tùy theo chế độ đánh mà sẽ có tính hợp lệ khác nhau:
+	Nếu đang là chế độ đánh trong từng ô: Thì hợp lệ là khi click trong phạm vi của từng ô, còn các vị trí khác đều không hợp lệ
+	=> x phải nằm giữa 2 biên của ô cột, y phải nằm giữa 2 biên của ô dòng
+	=> suy nghĩ làm cho nó tối ưu là nhìn trên giao diện miễn nó không bị đụng vào các đường kẻ còn lại đều là hợp lệ còn như hiện tại thì vẫn chưa ổn nếu như nằm ở gần gần mé mé các đường kẻ lý do bởi vì bản chất các đường kẻ đó nó có độ rộng tương ứng 1 ký tự 
+
+	Nếu đang là chế độ đánh theo giao điểm dòng cột: Thì hợp lệ là khi click vào 4 góc trái trên, phải trên, trái dưới, phải dưới của 1 ô, còn các vị trí khác đều không hợp lệ
+
+3/ nếu vị trí đánh hợp lệ thì in ra quân cờ tại vị trí tương ứng đó và tiến hành đi kiểm tra tính thắng/thua/hòa ...
+Bước 1: Là phải xác định được tại vị trí click chuột đó nếu hợp lệ thì nó đang là ô tọa độ dòng mấy? cột mấy?
+Bước 2: Cho dấu nháy nhảy đến tọa độ dòng, cột tương ứng đó và in ra quân cờ
+	=> Bản chất ở bước 2 này là chỉ là chúng ta gọi lại đoạn code xử lý khi nhấn phím Space hay Enter mà thôi. Vậy làm sao để có thể gọi lại toàn bộ nội dung xử lý đó?
+	Có 3 cách:
+	Cách 1: Chia hàm => gom tất cả dòng code xử lý khi nhấn phím Space hay Enter đó vào trong 1 hàm và từ đó gọi lại hàm là xong
+	
+	Cách 2: Giải quyết gọn lẹ ngay trong 1 nốt nhạc và không cần chia hàm => Dùng goto để nhảy đến vị trí bắt đầu thực thi nội dung bên trong khi nhấn Space hay Enter
+	Lưu ý cách 2: Nếu sau dòng lệnh đánh đó mà chúng ta có nhu cầu tiếp tục xử lý gì đó ở bên dưới nữa thì lại phải dùng 1 nhãn để goto quay trở lại để tiếp tục làm tiếp
+
+	Cách 3: Cũng giải quyết gọn lẹ như cách 2 và không chia hàm cũng không cần goto => Dùng cơ chế tự động nhấn phím trên bàn phím để nhờ đó chương trình tự động nhảy đến vị trí xử lý tương ứng khi nhấn phím đó và tự thực thi nội dung bên trong
+	Lưu ý cách 3: Chỉ xài được với phím ảo Virtual Key Code còn với hàm kbhit thì nó không nhận diện được => chỉ sử dụng được khi mình xử lý phím theo cách 1 dùng GetAsyncKeyState
+	=> Cách tự động gọi đến nhấn phím rất lợi hại và làm được rất nhiều thứ hay ho như tool autogame, auto ứng dụng ...
+
+
+Bài tập thử thách:
+1/ Tạo các nút nhấn: New Game, Undo, Redo, Play/Pause, Exit và xử lý khi di chuyển chuột vào phạm vi các nút tương ứng thì nút đó sẽ sáng màu xanh lá cây, nếu click chuột trái thì nút sẽ sáng màu đỏ sau đó trở về lại màu xanh lá cây, nếu con chuột di chuyển ra ngoài phạm vi của nút thì nút trở lại màu trắng như bình thường. Và khi click chuột xuống thì nó phải cho ta biết được nút vừa click là nút mang chức năng gì.
+Bước 1: Tạo các nút nhấn
+Bước 2: Xử lý sự kiện liên quan đến chuột
+
+Các hàng nút nhấn sẽ luôn có y từ 2 tới 4. Cụ thể công thức: vitriYbandau <= y <= 3 + vitriYbandau - 1
+x hợp lệ sẽ nằm trong đoạn từ x của nút ban đầu đến x của nút cuối cùng + độ rộng của nút cuối cùng - 1: vitriXbandau <= x <= vitriXnutcuoicung + dorongnutcuoicung - 1
+	=> Kể cả x nó có nằm trong đoạn này thì cũng phải tính đến 1 tình huống là nó nằm ở vị trí ngăn cách giữa 2 nút thì không hợp lệ
+
+vitriXbandau = 2
+dorongchungchotatca = 10
+
+New Game: x = [2, 11]
+Khoảng trắng: x = 12
+Undo: x = [13, 22]
+Khoảng trắng: x = 23
+Redo: x = [24, 33]
+Khoảng trắng: x = 34
+Exit: x = [35, 44]
+
+vitriXbandau = 20
+dorongchungchotatca = 10
+
+New Game: x = [20, 29]
+Khoảng trắng: x = 30
+Undo: x = [31, 40]
+Khoảng trắng: x = 41
+Redo: x = [42, 51]
+Khoảng trắng: x = 52
+Exit: x = [53, 62]
+
+vitriXbandau = 10
+dorongchungchotatca = 10
+
+New Game: x = [10, 19]
+Khoảng trắng: x = 20
+Undo: x = [21, 30]
+Khoảng trắng: x = 31
+Redo: x = [32, 41]
+Khoảng trắng: x = 42
+Exit: x = [43, 52]
+
+Khi đã xác định được vị trí click chuột hợp lệ và biết được tại vị trí đó là nút chức năng gì thì bây giờ công việc còn lại rất đơn giản, đó là xét tô màu cho tương ứng với sự kiện xử lý chuột
+
+Nếu chuột di chuyển vào phạm vi của 1 nút hợp lệ thì nút đó sẽ có màu nền là màu xanh
+Nếu chuột di chuyển ra ngoài phạm vi của nút vừa di chuyển vào thì nút trở về lại màu nền trắng ban đầu
+Nếu chuột click xuống phạm vi của 1 nút hợp lệ thì nút sẽ có màu nền là màu đỏ
+Nếu chuột thả click mà vẫn còn ở trong nút thì nút trở lại trạng thái màu xanh
+Nếu chuột thả click mà đã không còn ở trong nút nữa thì nút trở lại trạng thái màu nền trắng ban đầu
+
+2/ Sau khi đã thấy Anh xử lý tạo các nút nhấn theo hàng ngang, rồi xử lý đồ họa cho nó với chuột thì bây giờ các Bạn tạo 1 Project mới áp dụng tương tự làm cho Anh cái menu game lúc mới bắt đầu (New Game, Load Game, Option, Help, About, Exit ...) theo hàng dọc và cũng có hiệu ứng chuột khi di chuyển vào và click chọn thì biết được là đang chọn chức năng nào. Giống như thế này: https://www.youtube.com/watch?v=nvz07-DCm8w
+=> Xử lý luôn với cả trường hợp dùng chuột và dùng phím (tức là ban đầu tại menu đứng đầu sẽ sáng lên và mình dùng các phím mũi tên UP, DOWN để di chuyển đến menu muốn chọn tương ứng, sau đó nhấn enter hay space để chọn
+
+Thử thách giao các Bạn cố gắng suy nghĩ làm thử: Hiện tại mình đã xử lý được với cả chuột và phím để tương tác với Menu Game, tuy nhiên nó chỉ đúng khi khoảng cách ngăn cách giữa 2 Menu là 1 khoảng trắng, còn nếu khoảng ngăn cách giữa 2 Menu có từ 2 khoảng trắng trở lên hay thậm chí là không có khoảng trắng thì công thức sẽ bị sai với chuột. Vậy các Bạn hãy sửa lại làm sao cho công thức sẽ luôn đúng với chuột dù cho khoảng cách giữa 2 Menu có là bao nhiêu dòng trống đi nữa và dù cho vị trí xuất hiện tọa độ trên khung console ở vị trí nào đi nữa thì vẫn luôn đúng. Làm được như vậy rồi thì các Bạn quay trở lại Project mình làm các nút nhấn chức năng trong Game để xử lý tương tự với khoảng cách ngăn cách giữa 2 nút là độ rộng bất kỳ thì đều đúng được hết.
+
+
+3/ Xử lý khi nhấn Undo trong chế độ đánh theo giao điểm dòng cột thì nó xóa đi các quân cờ vừa đánh trước đó mà trả lại bàn cờ vẫn đầy đủ ký tự không bị lõm mất ký tự
+
+4/ Sau khi đã làm được số 1 thì các Bạn đem code ráp vào project game của chúng ta để các nút nhấn chức năng đó hiển thị lên giao diện game và đồng thời các hiệu ứng chuột được xử lý tương ứng và khi click chuột vào nó không phải chỉ báo là mình đang click vào nút nào mà giờ đây nó sẽ thực hiện đúng chức năng mà nút đó nói, lồng luôn cả cái menu game tạo ở số 2 và coi như chính thức hoàn tất game caro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

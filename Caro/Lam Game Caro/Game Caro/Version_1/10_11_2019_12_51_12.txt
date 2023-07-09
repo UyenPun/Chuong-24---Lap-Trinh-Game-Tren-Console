@@ -1,0 +1,29 @@
+sodong: 5
+socot: 5
+doronggiua2cot: 5
+doronggiua2dong: 3
+vitriXbandau: 20
+vitriYbandau: 10
+DanhTheoDuongGiaoDiemDongCot: 1
+stack_undo
+13
+1 1
+5 2
+5 3
+5 4
+5 5
+2 5
+2 4
+2 3
+2 2
+0 3
+0 2
+0 1
+0 0
+SoQuanCoGiongNhauLienTiepToiThieuDeThang: 4
+KichHoatCheDoChan2DauLaKhongChoThang: 0
+ThoiGianQuyDinhChoMoiNuocDanh: 20
+KichHoatCheDoTinhTongThoiGianDeDanhRaCoCuaMoiNguoiChoi: 1
+LuotDiBanDau: 1
+TongThoiGianDanhCoCuaNguoiChoiQuanCoX: 21
+TongThoiGianDanhCoCuaNguoiChoiQuanCoO: 0

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Version_1", "Version_1\Version_1.vcxproj", "{772FC9BE-2C7B-45B1-8359-D88EFC4B4A53}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Version_2_ChamDapAnTuDong", "Version_2_ChamDapAnTuDong\Version_2_ChamDapAnTuDong.vcxproj", "{2C255C31-8ABF-4248-87BB-1E3F4F06D938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{772FC9BE-2C7B-45B1-8359-D88EFC4B4A53}.Debug|Win32.ActiveCfg = Debug|Win32
+		{772FC9BE-2C7B-45B1-8359-D88EFC4B4A53}.Debug|Win32.Build.0 = Debug|Win32
+		{772FC9BE-2C7B-45B1-8359-D88EFC4B4A53}.Release|Win32.ActiveCfg = Release|Win32
+		{772FC9BE-2C7B-45B1-8359-D88EFC4B4A53}.Release|Win32.Build.0 = Release|Win32
+		{2C255C31-8ABF-4248-87BB-1E3F4F06D938}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C255C31-8ABF-4248-87BB-1E3F4F06D938}.Debug|Win32.Build.0 = Debug|Win32
+		{2C255C31-8ABF-4248-87BB-1E3F4F06D938}.Release|Win32.ActiveCfg = Release|Win32
+		{2C255C31-8ABF-4248-87BB-1E3F4F06D938}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

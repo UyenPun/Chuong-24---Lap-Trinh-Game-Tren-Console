@@ -1,0 +1,37 @@
+﻿Build started 11/28/2019 2:16:01 PM.
+     1>Project "C:\Users\VietNamSon\OneDrive\Desktop\Chuong 24 - Lap Trinh Game Tren Console\Caro\Lam Game Caro\Game Caro\Version_1\Version_1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(226): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(273): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(340): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(494): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(409): warning C4101: 'DoDaiNoiDungThongBao' : unreferenced local variable
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(1288): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(133) : see declaration of 'kbhit'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(1290): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(1432): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(133) : see declaration of 'kbhit'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(1434): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(1438): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(2100): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(133) : see declaration of 'kbhit'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(2102): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(2107): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(2142): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\users\vietnamson\onedrive\desktop\chuong 24 - lap trinh game tren console\caro\lam game caro\game caro\version_1\source.cpp(2312): warning C4101: 'DuongDanHopLe' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\VietNamSon\OneDrive\Desktop\Chuong 24 - Lap Trinh Game Tren Console\Caro\Lam Game Caro\Game Caro\Debug\Version_1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\VietNamSon\OneDrive\Desktop\Chuong 24 - Lap Trinh Game Tren Console\Caro\Lam Game Caro\Game Caro\Debug\Version_1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\VietNamSon\OneDrive\Desktop\Chuong 24 - Lap Trinh Game Tren Console\Caro\Lam Game Caro\Game Caro\Debug\Version_1.lib" /MACHINE:X86 Debug\Source.obj
+         Version_1.vcxproj -> C:\Users\VietNamSon\OneDrive\Desktop\Chuong 24 - Lap Trinh Game Tren Console\Caro\Lam Game Caro\Game Caro\Debug\Version_1.exe
+     1>Done Building Project "C:\Users\VietNamSon\OneDrive\Desktop\Chuong 24 - Lap Trinh Game Tren Console\Caro\Lam Game Caro\Game Caro\Version_1\Version_1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.92
